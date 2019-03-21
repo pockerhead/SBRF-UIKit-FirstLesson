@@ -13,6 +13,8 @@
 		06F61D30223CF54200C61072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F61D2F223CF54200C61072 /* Assets.xcassets */; };
 		06F61D33223CF54200C61072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F61D31223CF54200C61072 /* LaunchScreen.storyboard */; };
 		06F61D36223CF54200C61072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F61D35223CF54200C61072 /* main.m */; };
+		06F61D3E223CFABF00C61072 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F61D3D223CFABF00C61072 /* SecondViewController.m */; };
+		06F61D43223D094000C61072 /* LCTCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F61D42223D094000C61072 /* LCTCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		06F61D32223CF54200C61072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F61D34223CF54200C61072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06F61D35223CF54200C61072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06F61D3C223CFABF00C61072 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		06F61D3D223CFABF00C61072 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		06F61D41223D094000C61072 /* LCTCustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCTCustomView.h; sourceTree = "<group>"; };
+		06F61D42223D094000C61072 /* LCTCustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCTCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,10 @@
 		06F61D25223CF54000C61072 /* SBRF-UIKitLession */ = {
 			isa = PBXGroup;
 			children = (
+				06F61D40223D093300C61072 /* View */,
+				06F61D3F223D091C00C61072 /* ViewController */,
 				06F61D26223CF54000C61072 /* AppDelegate.h */,
 				06F61D27223CF54000C61072 /* AppDelegate.m */,
-				06F61D29223CF54000C61072 /* ViewController.h */,
-				06F61D2A223CF54000C61072 /* ViewController.m */,
 				06F61D2C223CF54000C61072 /* Main.storyboard */,
 				06F61D2F223CF54200C61072 /* Assets.xcassets */,
 				06F61D31223CF54200C61072 /* LaunchScreen.storyboard */,
@@ -69,6 +75,26 @@
 				06F61D35223CF54200C61072 /* main.m */,
 			);
 			path = "SBRF-UIKitLession";
+			sourceTree = "<group>";
+		};
+		06F61D3F223D091C00C61072 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06F61D29223CF54000C61072 /* ViewController.h */,
+				06F61D2A223CF54000C61072 /* ViewController.m */,
+				06F61D3C223CFABF00C61072 /* SecondViewController.h */,
+				06F61D3D223CFABF00C61072 /* SecondViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		06F61D40223D093300C61072 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				06F61D41223D094000C61072 /* LCTCustomView.h */,
+				06F61D42223D094000C61072 /* LCTCustomView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +167,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F61D43223D094000C61072 /* LCTCustomView.m in Sources */,
+				06F61D3E223CFABF00C61072 /* SecondViewController.m in Sources */,
 				06F61D2B223CF54000C61072 /* ViewController.m in Sources */,
 				06F61D36223CF54200C61072 /* main.m in Sources */,
 				06F61D28223CF54000C61072 /* AppDelegate.m in Sources */,
@@ -286,13 +314,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54X9L274YP;
+				DEVELOPMENT_TEAM = 2T76P993RC;
 				INFOPLIST_FILE = "SBRF-UIKitLession/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pockerhead.SBRF-UIKitLession";
+				PRODUCT_BUNDLE_IDENTIFIER = com.olimpbet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,13 +331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54X9L274YP;
+				DEVELOPMENT_TEAM = 2T76P993RC;
 				INFOPLIST_FILE = "SBRF-UIKitLession/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pockerhead.SBRF-UIKitLession";
+				PRODUCT_BUNDLE_IDENTIFIER = com.olimpbet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
